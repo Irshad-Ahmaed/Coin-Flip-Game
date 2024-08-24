@@ -1,0 +1,50 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "bool",
+				"name": "_guess",
+				"type": "bool"
+			}
+		],
+		"name": "flipCoin",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "withdraw",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"stateMutability": "payable",
+		"type": "receive"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
