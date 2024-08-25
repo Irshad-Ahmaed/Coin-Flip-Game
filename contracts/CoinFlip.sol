@@ -9,7 +9,7 @@ contract CoinFlip {
     }
 
     function flipCoin(bool _guess) public payable returns (bool) {
-        require(msg.value > 0, "You need to bet some ETH");
+        require(msg.value > 0.0, "You need to bet some ETH");
         bool result = (block.timestamp % 2 == 0);
         if (result == _guess) {
             payable(msg.sender).transfer(msg.value * 2);
