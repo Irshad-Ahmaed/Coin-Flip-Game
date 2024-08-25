@@ -34,7 +34,7 @@ const CoinFlip = () => {
       await tx;
       const outcomes = (Math.random() < 0.5 ? 1 : 0);
       setResult(outcomes ? 'You won! Collect your double bet' : 'You lost! Loose Nothing');
-      outcomes && await contract.flipCoin(selectedSide === 'heads');
+      outcomes && await contract.flipCoin(selectedSide === 'heads', {value: ethers.utils.parseEther(betAmount)});
       outcomes ? setWinning(winning + Number(betAmount) + Number(betAmount)) : setWinning(winning);
       outcomes && setWonAmount(winning);
     } catch (error) {
